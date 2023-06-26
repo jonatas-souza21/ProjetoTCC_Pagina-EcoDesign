@@ -16,30 +16,68 @@
     </head>
     
     <body>
-        <header>
+        <!-- Cabeçalho -->
+        <header class="header">
             <nav class="navbar">
-                <a href="#banner"><img src="./img/logo.png" alt="Logo"></a>
-                <ul>
-                    <li>
-                        <a href="#about">Sobre</a>
-                    </li>
-                    <li>
-                        <a href="#projects">Projetos</a>
-                    </li>
-                    <li>
-                        <a href="#testimony">Depoimentos</a>
-                    </li>
-                    <li>
-                        <a href="#contacts">Contato</a>
-                    </li>
-                </ul>
+                <div class="logo-box">
+                    <a href="#home">
+                        <img src="./img/logo.png" alt="Logo" class="logo">
+                    </a>
+                </div>
+
+                <div class="navlist-box">
+                    <ul class="navlist">
+                        <li>
+                            <a href="#about">Sobre</a>
+                        </li>
+                        <li>
+                            <a href="#projects">Projetos</a>
+                        </li>
+                        <li>
+                            <a href="#testimony">Depoimentos</a>
+                        </li>
+                        <li>
+                            <a href="#contacts">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- <div id="ham-menu-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512"><style>svg{fill:#faf9f6}</style><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+                </div> -->
             </nav>
         </header>
         
         <main>
-            <section id="banner">
-                <div class="img-logo">
-                    <img src="./img/logo.png" alt="Logo">
+            <section id="home">
+                <div class="home-img">
+                    <div class="img-text">
+                        <h1>Design sustentável que ecoa <span>beleza</span></h1>
+                    </div>
+                </div>
+                <div class="home-info">
+                    <div class="info-text">
+                        <h2>Lorem ipsum dolor sit amet.</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, porro!</p>
+                        <div class="btn-box"><a href="#contacts">Entre em contato</a></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cards-container">
+                <div class="cards-box">
+                    <div class="card-item">
+                        <img src="img/img-card2.jpg" alt="Imagem ilustrativa">
+                    </div>
+                    <div class="card-item">
+                
+                    </div>
+                    <div class="card-item">
+
+                    </div>
+                    <div class="card-item">
+
+                    </div>
                 </div>
             </section>
 
@@ -53,7 +91,7 @@
                         </p>
                     </div>
 
-                    <button id="button-read-more">Ler mais</button>
+                    <button id="button-read-more" class="btn">Ler mais</button>
                 </div>
                 <div class="about-cover">
                     <div class="img-box"><img src="img/imagemfundo02.jpg" alt="Imagem de um projeto"></div>
@@ -61,7 +99,7 @@
             </section>
 
             <section id="projects">
-                <div class="pj-title">
+                <div class="projects-title">
                     <h2>Projetos</h2>
                     <h3>Conheça um pouco dos nossos projetos</h3>
                 </div>
@@ -81,12 +119,12 @@
             </section>
 
             <section id="testimony">
-                <div class="tm-box">
-                    <div class="tm-title">
+                <div class="testimony-box">
+                    <div class="testimony-title">
                         <h2>O que dizem sobre nós</h2>
                         <p>Veja as avaliações dos nossos clientes</p>
                     </div>
-                    <div class="tm-comments">
+                    <div class="testimony-comments">
                         <div class="box1">
                             <div class="quote-box">
                                 <div>
@@ -169,7 +207,7 @@
                                 </div>
                                 <p>Digite sua mensagem:</p>
                                 <textarea name="Campo de texto" id="textarea" cols="100%" rows="10%"></textarea>
-                                <input type="submit" value="Enviar Mensagem" id="input-submit">
+                                <input type="submit" value="Enviar Mensagem" id="input-submit" class="btn">
                         </form>
                     </div>
                 </div>
@@ -219,7 +257,9 @@
             </div>
         </footer>
 
-        <button id="button-to-top"><div id="button-arrow"></div></button>
+        <button id="button-top">
+            <div id="arrow"></div>
+        </button>
 
         <script src="js/main.js"></script>
     </body>

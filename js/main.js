@@ -38,21 +38,35 @@ controls.forEach((control) => {
 }
 
 // Botão para voltar ao início
-{
-  const btn = document.querySelector("#button-to-top");
+// {
+//   const btn = document.querySelector("#button-to-top");
 
-  btn.addEventListener("click", () => {
+//   btn.addEventListener("click", () => {
+//     window.scrollTo(0,0)
+//   })
+
+//   document.addEventListener("scroll", () => {
+//     if (window.scrollY > 200) {
+//         btn.style.display = "flex"
+//       } else {
+//         btn.style.display = "none"
+//       }
+//   })
+// }
+
+//Botão para voltar ao início
+{
+  const btn = document.querySelector('#button-top');
+
+  btn.addEventListener('click', () => {
     window.scrollTo(0,0)
   })
 
-  document.addEventListener("scroll", function() {
-    if (window.scrollY > 200) {
-        btn.style.display = "flex"
-      } else {
-        btn.style.display = "none"
-      }
+  document.addEventListener('scroll', () => {
+    btn.classList.toggle ('btn-active', window.scrollY > 100);
   })
 }
+
 
 //Botão leia mais
 const button = document.querySelector('#button-read-more');
@@ -68,7 +82,11 @@ button.addEventListener('click', () => {
   return button.innerHTML = 'Ler mais';
 })
 
-
+// Menu nav - Efeito fade-in/fade-out
+const header = document.querySelector('.header');
+window.addEventListener('scroll', () => {
+  header.classList.toggle ('sticky', window.scrollY > 100);
+})
 
 
 
