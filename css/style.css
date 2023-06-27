@@ -11,9 +11,9 @@
 
 /* Variáveis padrão */
 :root {
-    --bg-color:#55514d;
+    --bg-color: #55514d;
     --second-bg-color: #000;
-    --text-color: #FAF9F6;
+    --text-color: #faf9f6;
     --second-text-color: #000;
     --logo-color: #e4c0a8;
     --second-logo-color: #341d08;
@@ -106,45 +106,52 @@ body {
 }
 /*-------------FIM - NAVBAR--------------*/
 
-
 /*------------------INICIO DO MAIN--------------------*/
 
 /* ----------- SECTION HOME-INICIO ---------------- */
 #home {
     width: 100%;
-    height: 86vh;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: var(--second-logo-color);
-
-}
-
-.home-img {
-    width: 50%;
-    height: 100%;
-    background-image: url("../img/imagemfundo03.jpg");
+    background-image: url('../img/imagemfundo02.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.home-text {
+    width: 50%;
+    height: 50%;
     display: flex;
     align-items: center;
     position: relative;
     border-radius: 0 15px 15px 0;
 }
 
-.img-text {
-    width: 80%;
-    margin: auto;
+.text-box {
+    margin: 5rem 0 0 14rem;
+    width: 100%;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 20px;
 }
 
-.img-text h1 {
+.text-box h1 {
     font-size: var(--h1-font-size);
 }
 
-.img-text span {
+.text-box span {
     color: var(--logo-color);
 }
 
-.home-info {
+.info-text {
+    margin-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -154,21 +161,14 @@ body {
     font-size: var(--p-font-size);
 }
 
-.info-text {
-    width: 40%;
-    line-height: 2rem;
-}
-
-.info-text h2, p{
-    margin-bottom: 2rem;
-}
-
 .info-text h2 {
     font-size: var(--h2-font-size);
+    margin-bottom: 1.1rem;
 }
 
 .info-text p {
     font-size: var(--p-font-size);
+    margin-bottom: 1.1rem;
 }
 
 .info-text .btn-box {
@@ -189,8 +189,8 @@ body {
     background-color: #ffffff5c;
 }
 
-.home-img::after {
-    content: "";
+#home::after {
+    content: '';
     width: 100%;
     height: 100%;
     background-color: #341d0889;
@@ -232,7 +232,7 @@ body {
     border-radius: 36px;
 }
 
-.card-item h3{
+.card-item h3 {
     position: relative;
     top: -100px;
     left: 0;
@@ -241,13 +241,13 @@ body {
 }
 
 .card-item::after {
-    content: "";
+    content: '';
     width: 100%;
     height: 100%;
     background-color: #341d0889;
     position: absolute;
     left: 0;
-    top: 0; 
+    top: 0;
     border-radius: 36px;
 }
 
@@ -296,7 +296,7 @@ body {
 }
 
 .content::after {
-    content: "";
+    content: '';
     position: absolute;
     width: 100%;
     height: 100%;
@@ -334,7 +334,6 @@ body {
 }
 /* SECTION ABOUT - FIM */
 
-
 /* SECTION PROJECTS - INICIO */
 #projects {
     height: 95vh;
@@ -352,76 +351,77 @@ body {
 }
 
 .gallery-container {
-	position: relative;
-	padding: 15px;
-	max-width: 85%;
-	margin: 0 auto;
+    position: relative;
+    padding: 15px;
+    max-width: 85%;
+    margin: 0 auto;
 }
 
 .gallery {
-	display: flex;
-	flex-flow: row nowrap;
-	gap: 2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2rem;
 }
 
 .gallery-wrapper {
-	overflow-x: auto;
+    overflow-x: auto;
 }
 
 .gallery-wrapper::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
-	
+
 .gallery img {
-	height: 40rem;
-	width: 70rem;
-	object-fit: cover;
+    height: 40rem;
+    width: 70rem;
+    object-fit: cover;
     border-radius: 15px;
 }
 
-.arrow-left, .arrow-right {
-	position: absolute;
+.arrow-left,
+.arrow-right {
+    position: absolute;
     z-index: 1;
-	top: 0;
-	left: 0;
-	right: auto;
-	bottom: 0;
-	font-size: 1.25rem; /*Alterando tamanho da fonte dos botoes*/
-	line-height: 45rem;
-	width: 4rem;
-	text-align: center;
-	color: var(--text-color);
-	cursor: pointer;
-	border: none;
-	background: linear-gradient(to left, transparent 0%, black 120%);
-	opacity: 0.3;
-	transition: all 0.6s ease-in-out; /* Efeito de esmaecer ao entrar e sair */
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    font-size: 1.25rem; /*Alterando tamanho da fonte dos botoes*/
+    line-height: 45rem;
+    width: 4rem;
+    text-align: center;
+    color: var(--text-color);
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to left, transparent 0%, black 120%);
+    opacity: 0.3;
+    transition: all 0.6s ease-in-out; /* Efeito de esmaecer ao entrar e sair */
     border-radius: 15px;
 }
 
 .arrow-right {
-	left: auto;
-	right: 0;
-	background: linear-gradient(to right, transparent 0%, black 120%);
+    left: auto;
+    right: 0;
+    background: linear-gradient(to right, transparent 0%, black 120%);
 }
 
-.arrow-left:hover, .arrow-right:hover {
-	opacity: 1;
+.arrow-left:hover,
+.arrow-right:hover {
+    opacity: 1;
 }
 
 .item {
-	width: 70rem;
-	height: 40rem;
-	flex-shrink: 0;
-	opacity: 0.4;
-	transition: all 600ms ease-in-out;
+    width: 70rem;
+    height: 40rem;
+    flex-shrink: 0;
+    opacity: 0.4;
+    transition: all 600ms ease-in-out;
 }
 
 .current-item {
-	opacity: 1;
+    opacity: 1;
 }
 /* SECTION PROJECTS - FIM */
-
 
 /* SECTION TESTIMONY - INICIO */
 #testimony {
@@ -474,7 +474,7 @@ body {
 }
 
 .quote-box {
-    background-color: #FAF9F6;
+    background-color: #faf9f6;
     width: 100%;
     height: 100%;
     border-radius: 10px;
@@ -493,7 +493,6 @@ body {
     margin-left: 1.2rem;
 }
 /* SECTION TESTIMONY - FIM */
-
 
 /* SECTION CONTACTS - INICIO */
 #contacts {
@@ -545,11 +544,15 @@ body {
     width: 100%;
 }
 
-#input-mail, #input-tel {
+#input-mail,
+#input-tel {
     width: 45%;
 }
 
-#input-name, #input-tel, #input-mail, #input-submit {
+#input-name,
+#input-tel,
+#input-mail,
+#input-submit {
     padding: 1rem 2rem;
     margin: 1rem 0;
     border-radius: 5px;
@@ -557,8 +560,10 @@ body {
 }
 
 /*Tira o contorno ao clicar na caixa input*/
-#input-name, #input-tel, #input-mail:focus {
-    outline: none; 
+#input-name,
+#input-tel,
+#input-mail:focus {
+    outline: none;
 }
 
 #textarea {
@@ -568,7 +573,6 @@ body {
     padding: 1rem;
     resize: none;
 }
-
 
 .map-container {
     width: 50%;
@@ -586,7 +590,6 @@ body {
 }
 /* SECTION CONTACTS - INICIO */
 /* FIM DO MAIN */
-
 
 /* FOOTER - INICIO*/
 footer {
@@ -616,7 +619,7 @@ footer {
     margin-bottom: 1rem;
 }
 
-#footer-contacts p{
+#footer-contacts p {
     margin-bottom: 0.5rem;
 }
 
@@ -659,7 +662,6 @@ footer {
 #button-top {
     visibility: hidden;
     background-color: transparent;
-
 }
 
 #button-top.btn-active {
