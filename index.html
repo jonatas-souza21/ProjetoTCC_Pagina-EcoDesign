@@ -1,98 +1,138 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Eco Design - Design sustentável que ecoa beleza</title>
         <!-- CSS -->
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.css" />
         <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
         <!--Font Awesome CDN -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
     </head>
-    
+
     <body>
         <!-- Cabeçalho -->
-        <header class="header">
-            <nav class="navbar">
-                <div class="logo-box">
-                    <a href="#home">
-                        <img src="./img/logo.png" alt="Logo" class="logo">
-                    </a>
-                </div>
+        <nav class="navbar">
+            <a href="#home">
+                <img src="./img/logo.png" alt="Logo" class="logo" />
+            </a>
 
-                <div class="navlist-box">
-                    <ul class="navlist">
-                        <li>
-                            <a href="#about">Sobre</a>
-                        </li>
-                        <li>
-                            <a href="#projects">Projetos</a>
-                        </li>
-                        <li>
-                            <a href="#testimony">Depoimentos</a>
-                        </li>
-                        <li>
-                            <a href="#contacts">Contato</a>
-                        </li>
-                    </ul>
-                </div>
+            <ul class="navlist">
+                <li>
+                    <a href="#about">Sobre</a>
+                </li>
+                <li>
+                    <a href="#projects">Projetos</a>
+                </li>
+                <li>
+                    <a href="#testimony">Depoimentos</a>
+                </li>
+                <li>
+                    <a href="#contacts">Contato</a>
+                </li>
+            </ul>
 
-                <!-- <div id="ham-menu-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512"><style>svg{fill:#faf9f6}</style><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
-                </div> -->
-            </nav>
-        </header>
-        
+            <div id="menu-icon" class="box box-menu">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1em"
+                    viewBox="0 0 448 512"
+                >
+                    <style>
+                        svg {
+                            fill: #faf9f6;
+                        }
+                    </style>
+                    <path
+                        d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                    />
+                </svg>
+            </div>
+        </nav>
+
         <main>
+            <!-- Seção Home -->
             <section id="home">
                 <div class="home-text">
-                    <div class="text-box">
-                        <h1>Design sustentável que ecoa <span>beleza.</span></h1>
-                        <div class="info-text">
-                            <h2>Lorem ipsum dolor sit amet.</h2>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, porro!</p>
-                            <div class="btn-box"><a href="#contacts">Entre em contato</a></div>
-                        </div>
+                    <h1>Design sustentável</h1>
+                    <h1>que ecoa <span>beleza.</span></h1>
+                    <div class="info-text">
+                        <h2>Lorem ipsum dolor sit amet.</h2>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Voluptatum, porro!
+                        </p>
                     </div>
+                    <a href="#contacts" class="btn-home">Entre em contato</a>
                 </div>
             </section>
 
-            <section class="cards-container" style="display: none;">
+            <section class="cards-container" style="display: none">
                 <div class="cards-box">
                     <div class="card-item">
-                        <img src="img/img-card3.jpg" alt="Imagem ilustrativa">
+                        <img src="img/img-card3.jpg" alt="Imagem ilustrativa" />
                         <h3>Lorem,</h3>
                         <h3>ipsum dolor.</h3>
                     </div>
                     <div class="card-item">
-                        <img src="img/img-card2.jpg" alt="Imagem ilustrativa">
+                        <img src="img/img-card2.jpg" alt="Imagem ilustrativa" />
                     </div>
                     <div class="card-item">
-                        <img src="img/img-card1.jpg" alt="Imagem ilustrativa">
+                        <img src="img/img-card1.jpg" alt="Imagem ilustrativa" />
                     </div>
                     <div class="card-item">
-                        <img src="img/img-card3.jpg" alt="Imagem ilustrativa">
-
+                        <img src="img/img-card3.jpg" alt="Imagem ilustrativa" />
                     </div>
                 </div>
             </section>
 
+            <!-- Seção About -->
             <section id="about">
-                
-                <div class="about-cover">
-                    <div class="img-box"><img src="img/imagemfundo02.jpg" alt="Imagem de um projeto"></div>
+                <div class="about-img">
+                    <img
+                        src="img/imagemfundo04.jpg"
+                        alt="Imagem de um projeto"
+                    />
                 </div>
-                <div class="about-card">
+                <div class="about-text">
                     <div class="content">
                         <h2>Sobre nós</h2>
-                        <p>No vibrante coração de São Paulo, especificamente no bairro de Indianópolis, nasce uma empresa com uma missão clara: transformar a percepção do design de interiores e do cuidado com o meio ambiente. Em 2018 duas amigas visionárias, movidas pela paixão, pela sustentabilidade e criatividade, uniram forças para fundar uma empresa verdadeiramente revolucionária.
-                            </p>
-                        <p>Proporcionando ambientes que sejam verdadeiras expressões de sustentabilidade e bem-estar, nossa missão é transformar espaços através do design de interiores sustentável. Almejamos ser líderes no setor, reconhecidos pela excelência, criatividade e compromisso com a preservação ambiental. Para minimizar o impacto ambiental, utilizamos materiais sustentáveis e soluções inovadoras. Acreditamos que o design sustentável promove qualidade de vida e equilíbrio entre o ser humano e o meio ambiente. Assim, estamos prontos para criar soluções personalizadas que respeitem e preservem o planeta.
+                        <p>
+                            No vibrante coração de São Paulo, especificamente no
+                            bairro de Indianópolis, nasce uma empresa com uma
+                            missão clara: transformar a percepção do design de
+                            interiores e do cuidado com o meio ambiente. Em 2018
+                            duas amigas visionárias, movidas pela paixão, pela
+                            sustentabilidade e criatividade, uniram forças para
+                            fundar uma empresa verdadeiramente revolucionária.
+                        </p>
+                        <p>
+                            Proporcionando ambientes que sejam verdadeiras
+                            expressões de sustentabilidade e bem-estar, nossa
+                            missão é transformar espaços através do design de
+                            interiores sustentável. Almejamos ser líderes no
+                            setor, reconhecidos pela excelência, criatividade e
+                            compromisso com a preservação ambiental. Para
+                            minimizar o impacto ambiental, utilizamos materiais
+                            sustentáveis e soluções inovadoras. Acreditamos que
+                            o design sustentável promove qualidade de vida e
+                            equilíbrio entre o ser humano e o meio ambiente.
+                            Assim, estamos prontos para criar soluções
+                            personalizadas que respeitem e preservem o planeta.
                         </p>
                     </div>
 
@@ -103,10 +143,60 @@
             <section id="projects">
                 <div class="projects-title">
                     <h2>Projetos</h2>
-                    <h3>Conheça um pouco dos nossos projetos</h3>
+                    <h3>Nossos últimos trabalhos</h3>
                 </div>
 
-                <div class="gallery-container">
+                <div class="projects-content">
+                    <div class="row">
+                        <img src="img/img-card1.jpg" alt="Projeto 1" />
+                        <div class="layer">
+                            <h5>Lorem Ipsum</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <img src="img/img-card2.jpg" alt="Projeto 1" />
+                        <div class="layer">
+                            <h5>Lorem Ipsum</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <img src="img/img-card3.jpg" alt="Projeto 1" />
+                        <div class="layer">
+                            <h5>Lorem Ipsum</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <img src="img/imagemfundo03.jpg" alt="Projeto 1" />
+                        <div class="layer">
+                            <h5>Lorem Ipsum</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <img src="img/imagemfundo02.jpg" alt="Projeto 1" />
+                        <div class="layer">
+                            <h5>Lorem Ipsum</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <img src="img/imagemfundo04.jpg" alt="Projeto 1" />
+                        <div class="layer">
+                            <h5>Lorem Ipsum</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="gallery-container">
                     <button class="arrow-left control" aria-label="Previus image">◀</button>
                     <button class="arrow-right control" aria-label="next-image">▶</button>
                     <div class="gallery-wrapper">
@@ -117,81 +207,132 @@
                             <img src="img/istockphoto-886308656-1024x1024.jpg" alt="Paisagem4" class="item current-item">
                             <img src="img/imagemfundo02.jpg" alt="Paisagem5" class="item current-item">
                     </div>
-                </div>
+                </div> -->
             </section>
 
             <section id="testimony">
-                <div class="testimony-box">
-                    <div class="testimony-title">
-                        <h2>O que dizem sobre nós</h2>
-                        <p>Veja as avaliações dos nossos clientes</p>
+                <div class="testimony-title">
+                    <h2>O que dizem sobre nós</h2>
+                    <p>Veja as avaliações dos nossos clientes</p>
+                </div>
+                <div class="testimony-box-container">
+                    <div class="testimony-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                    <img
+                                        src="img/person-icon.png"
+                                        alt="Foto-pessoa"
+                                    />
+                                </div>
+                                <div class="name-user">
+                                    <h4><strong>Carlos Montenolli</strong></h4>
+                                    <p>
+                                        <span>Diretor de Operações - Acme Consultoria</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="reviews">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="client-comment">
+                            <p>Estamos extremamente satisfeitos com os serviços prestados. Criaram um ambiente belíssimo e funcional para nossa empresa. Estamos orgulhosos de poder mostrar um espaço que respeita o meio ambiente aos nossos clientes e colaboradores.</p>
+                        </div>
                     </div>
-                    <div class="testimony-comments">
-                        <div class="box1">
-                            <div class="quote-box">
-                                <div>
-                                    <img src="img/rating_5.png" alt="">
+                    
+                    <div class="testimony-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                    <img
+                                        src="img/person-icon.png"
+                                        alt="Foto-pessoa"
+                                    />
                                 </div>
-                                <p>Estamos extremamente satisfeitos com os serviços prestados. Criaram um ambiente belíssimo e funcional para nossa empresa. Estamos orgulhosos de poder mostrar um espaço que respeita o meio ambiente aos nossos clientes e colaboradores.</p>
-                                <div class="person-info">
-                                    <img src="img/person-icon.png" alt="Foto-pessoa">
-                                    <div class="person-name">
-                                        <h4>Carlos Montenolli</h4>
-                                        <p>Diretor de Operações - Acme Consultoria</p>
-                                    </div>
+                                <div class="name-user">
+                                    <h4><strong>Carlos Montenolli</strong></h4>
+                                    <p>
+                                        <span>Diretor de Operações - Acme Consultoria</span>
+                                    </p>
                                 </div>
+                            </div>
+                            <div class="reviews">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
                             </div>
                         </div>
 
-                        <div class="box2">
-                            <div class="quote-box">
-                                <div>
-                                    <img src="img/rating_5.png" alt="">
-                                </div>
-                                <p>Contratamos a EcoDesign para renovar o ambiente de nosso escritório, e estamos extremamente satisfeitos com o resultado. Além do projeto incrível que criaram, eles conseguiram integrar perfeitamente materiais ecológicos em todos os detalhes da decoração.</p>
-                                <div class="person-info">
-                                    <img src="img/person-icon.png" alt="Foto-pessoa">
+                        <div class="client-comment">
+                            <p>Estamos extremamente satisfeitos com os serviços prestados. Criaram um ambiente belíssimo e funcional para nossa empresa. Estamos orgulhosos de poder mostrar um espaço que respeita o meio ambiente aos nossos clientes e colaboradores.</p>
+                        </div>
+                    </div>
 
-                                    <div class="person-name">
-                                        <h4>Mariana Paschali Bello</h4>
-                                        <p>Gerente de RH - Harmony Haven</p>
-                                    </div>
+                    <div class="testimony-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                    <img
+                                        src="img/person-icon.png"
+                                        alt="Foto-pessoa"
+                                    />
                                 </div>
+                                <div class="name-user">
+                                    <h4><strong>Carlos Montenolli</strong></h4>
+                                    <p>
+                                        <span>Diretor de Operações - Acme Consultoria</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="reviews">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
                             </div>
                         </div>
 
-                        <div class="box3">
-                            <div class="quote-box">
-                                <div>
-                                    <img src="img/rating_4.png" alt="">
-                                </div>
-                                <p>Contratar a EcoDesign foi a melhor escolha que fiz para a renovação do meu lar. A equipe demonstrou um profundo conhecimento sobre materiais ecologicamente corretos e conseguiu criar um ambiente aconchegante e elegante, respeitando minhas preferências pessoais.</p>
-                                <div class="person-info">
-                                    <img src="img/person-icon.png" alt="Foto-pessoa">
+                        <div class="client-comment">
+                            <p>Estamos extremamente satisfeitos com os serviços prestados. Criaram um ambiente belíssimo e funcional para nossa empresa. Estamos orgulhosos de poder mostrar um espaço que respeita o meio ambiente aos nossos clientes e colaboradores.</p>
+                        </div>
+                    </div>
 
-                                    <div class="person-name">
-                                        <h4>Ana Torres</h4>
-                                        <p>Advogada</p>
-                                    </div>
+                    <div class="testimony-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                    <img
+                                        src="img/person-icon.png"
+                                        alt="Foto-pessoa"
+                                    />
                                 </div>
+                                <div class="name-user">
+                                    <h4><strong>Carlos Montenolli</strong></h4>
+                                    <p>
+                                        <span>Diretor de Operações - Acme Consultoria</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="reviews">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
                             </div>
                         </div>
 
-                        <div class="box4">
-                            <div class="quote-box">
-                                <div>
-                                    <img src="img/rating_5.png" alt="">
-                                </div>
-                                <p>Estou encantado com o trabalho realizado pela EcoDesign. Foi maravilhoso ver como eles buscaram opções de materiais que não prejudicam o meio ambiente, sem abrir mão da estética e funcionalidade. A equipe foi extremamente profissional e atenciosa, sempre pronta para atender às minhas necessidades.</p>
-                                <div class="person-info">
-                                    <img src="img/person-icon.png" alt="Foto-pessoa">
-
-                                    <div class="person-name">
-                                        <h4>Pedro Santos</h4>
-                                        <p>Engenheiro Civil</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="client-comment">
+                            <p>Estamos extremamente satisfeitos com os serviços prestados. Criaram um ambiente belíssimo e funcional para nossa empresa. Estamos orgulhosos de poder mostrar um espaço que respeita o meio ambiente aos nossos clientes e colaboradores.</p>
                         </div>
                     </div>
                 </div>
@@ -202,20 +343,48 @@
                     <div class="form-box">
                         <h2>Entre em contato conosco</h2>
                         <form action="#" class="form">
-                                <input type="text" placeholder="Nome Completo" id="input-name">
-                                <div class="input-box">
-                                    <input type="email" placeholder="E-mail" id="input-mail">
-                                    <input type="tel" name="telefone" placeholder="Telefone"  id="input-tel">
-                                </div>
-                                <p>Digite sua mensagem:</p>
-                                <textarea name="Campo de texto" id="textarea" cols="100%" rows="10%"></textarea>
-                                <input type="submit" value="Enviar Mensagem" id="input-submit" class="btn">
+                            <input
+                                type="text"
+                                placeholder="Nome Completo"
+                                id="input-name"
+                            />
+                            <div class="input-box">
+                                <input
+                                    type="email"
+                                    placeholder="E-mail"
+                                    id="input-mail"
+                                />
+                                <input
+                                    type="tel"
+                                    name="telefone"
+                                    placeholder="Telefone"
+                                    id="input-tel"
+                                />
+                            </div>
+                            <p>Digite sua mensagem:</p>
+                            <textarea
+                                name="Campo de texto"
+                                id="textarea"
+                                cols="100%"
+                                rows="10%"
+                            ></textarea>
+                            <input
+                                type="submit"
+                                value="Enviar Mensagem"
+                                id="input-submit"
+                                class="btn"
+                            />
                         </form>
                     </div>
                 </div>
 
-                <div class="map-container"> 
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d913.9823150459333!2d-46.66957885803376!3d-23.60686981298526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a0794e47901%3A0xf0cd91f6fcc63202!2sAv.%20Bem-te-vi%2C%2077%20-%20Indian%C3%B3polis%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004524-030!5e0!3m2!1spt-BR!2sbr!4v1687369295878!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d913.9823150459333!2d-46.66957885803376!3d-23.60686981298526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a0794e47901%3A0xf0cd91f6fcc63202!2sAv.%20Bem-te-vi%2C%2077%20-%20Indian%C3%B3polis%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004524-030!5e0!3m2!1spt-BR!2sbr!4v1687369295878!5m2!1spt-BR!2sbr"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
                 </div>
             </section>
         </main>
@@ -227,9 +396,13 @@
                     <h3>Design sustentável que ecoa beleza</h3>
                     <p>Av. Bem-te-vi, 77 - Indianópolis</p>
                     <p>São Paulo - SP, 04524-030</p>
-                    
+
                     <div class="footer-social-media">
-                        <a href="https://instagram.com/ecodesign_eco?igshid=MzNlNGNkZWQ4Mg==" class="footer-link" target="_blank">
+                        <a
+                            href="https://instagram.com/ecodesign_eco?igshid=MzNlNGNkZWQ4Mg=="
+                            class="footer-link"
+                            target="_blank"
+                        >
                             <i class="fa-brands fa-instagram fa-2xl"></i>
                         </a>
                         <a href="#" class="footer-link">
@@ -243,10 +416,14 @@
                         <h2>Mais informações</h2>
                     </li>
                     <li>
-                        <a href="#contacts" class="footer-link">Faça seu projeto conosco</a>
+                        <a href="#contacts" class="footer-link"
+                            >Faça seu projeto conosco</a
+                        >
                     </li>
                     <li>
-                        <a href="#" class="footer-link">Seja nosso fornecedor</a>
+                        <a href="#" class="footer-link"
+                            >Seja nosso fornecedor</a
+                        >
                     </li>
                     <li>
                         <a href="#" class="footer-link">Trabalhe conosco</a>
@@ -255,7 +432,10 @@
             </div>
 
             <div id="footer-copyright">
-                <p>Copyright &copy; 2023 Eco Design | Desenvolvido por <a href="#">DevMinds</a></p>
+                <p>
+                    Copyright &copy; 2023 Eco Design | Desenvolvido por
+                    <a href="#">DevMinds</a>
+                </p>
             </div>
         </footer>
 

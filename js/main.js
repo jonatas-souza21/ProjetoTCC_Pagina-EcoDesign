@@ -72,7 +72,7 @@ controls.forEach((control) => {
 const button = document.querySelector('#button-read-more');
 
 button.addEventListener('click', () => {
-  const aboutCard = document.querySelector('.about-card');
+  const aboutCard = document.querySelector('.about-text');
   aboutCard.classList.toggle('active');
 
   if (aboutCard.classList.contains('active')) {
@@ -83,7 +83,7 @@ button.addEventListener('click', () => {
 })
 
 // Menu nav - Efeito fade-in/fade-out
-const header = document.querySelector('.header');
+const header = document.querySelector('.navbar');
 window.addEventListener('scroll', () => {
   header.classList.toggle ('sticky', window.scrollY > 100);
 })
