@@ -11,7 +11,7 @@
 
 /* Variáveis padrão */
 :root {
-    --bg-color: #55514d;
+    --bg-color: #70665C;
     --second-bg-color: #000;
     --text-color: #faf9f6;
     --second-text-color: #000;
@@ -78,13 +78,15 @@ section {
 }
 
 .navbar.sticky {
-    background-color: var(--second-logo-color);
-    border-bottom: 1px solid #522e0d;
+    background-color: #341d0875;
+    border-bottom: 1px solid #522e0d6c;
+    backdrop-filter: blur(20px);
     padding: 0.75rem 15%;
 }
 
 .logo {
-    width: 220px;
+    width: 230px;
+    border-radius: 5px;
 }
 
 .navlist {
@@ -294,7 +296,7 @@ section {
 }
 
 .about-img {
-    width: 80%;
+    width: 90%;
     height: 80%;
 }
 
@@ -306,7 +308,7 @@ section {
 }
 
 .content {
-    width: 80%;
+    width: 100%;
     height: 25rem;
     overflow: hidden;
     position: relative;
@@ -343,7 +345,21 @@ section {
 }
 
 #button-read-more {
-    color: var(--text-color);
+    padding: 1rem 4rem 1rem 4rem;
+    border-radius: 5px;
+    border: none;
+    margin-top: 1.25rem;
+    font-weight: bold;
+    background-color: var(--logo-color);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: 1rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.box-button-rm {
+    width: 100%;
 }
 /* SECTION ABOUT - FIM */
 
@@ -356,16 +372,52 @@ section {
     align-items: center;
     flex-direction: column;
     padding-top: 5rem;
+    background-color: #8A7E71;
+    position: relative;
+}
+
+#projects::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background-color: #8A7E71;
+    transform: skew(0deg, -2deg);
+    transform-origin: left;
+    width: 100%;
+    height: 100px;
+}
+
+#projects::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    background-color: #8A7E71;
+    transform: skew(0deg, -2deg);
+    transform-origin: right;
+    width: 100%;
+    height: 100px;
 }
 
 .projects-title {
-    margin-bottom: 5rem;
     text-align: center;
+    z-index: 1;
+}
+
+.projects-title h2 {
+    font-size: var(--h2-font-size);
+}
+
+.projects-title p {
+    font-size: var(--p-font-size);
 }
 
 .projects-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(450px, auto));
     align-items: center;
     gap: 2.5rem;
     margin-top: 5rem;
@@ -373,22 +425,34 @@ section {
 
 .row {
     position: relative;
-    overflow: hidden;
     border-radius: 8px;
     cursor: pointer;
     transition: transform 0.5s;
+    height: 100%;
+    width: 100%;
 }
+
+/* .row-img {
+    max-height: 18.13rem;
+    max-width: 31.9rem;
+    border-radius: 8px;
+} */
 
 .row img {
     width: 100%;
+    height: 100%;
     border-radius: 8px;
-    
-    display: block;
+    object-fit: cover;
     transition: transform 0.5s;
 }
 
 .row:hover img{
-    transform: scale(1.1);
+    transform: scale(1.05);
+}
+
+.layer {
+    text-align: center;
+    margin-top: 1rem;
 }
 
 /* .gallery-container {
@@ -493,7 +557,7 @@ section {
 }
 
 .testimony-box {
-    width: 31.25rem;
+    max-width: 40rem;
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
     background-color: #faf9f6;
     color: var(--second-text-color);
@@ -657,6 +721,7 @@ footer {
     height: auto;
     width: 100%;
     background-color: #080808;
+    position: relative;
 }
 
 #footer-content {
@@ -716,6 +781,19 @@ footer {
 #footer-copyright a:hover {
     color: #55514d;
     transition: 0.3s;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 0;
+    display: block;
+    background-color: #080808;
+    transform: skew(0deg, -1deg);
+    transform-origin: left;
+    width: 100%;
+    height: 80px;
 }
 /* FOOTER - FIM*/
 
