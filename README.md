@@ -1,5 +1,5 @@
 # ProjetoTCC_Pagina-EcoDesign
-Projeto de TCC do Instituto da Oportunidade Social desenvolvido em equipe. Um site desenvolvido para uma empresa fictícia, EcoDesign. Site responsível e adaptado para diferentes tamanhos de tela.
+Projeto de TCC do Instituto da Oportunidade Social desenvolvido em equipe. Um site desenvolvido para uma empresa fictícia, EcoDesign. Site responsível e adaptado para diferentes tamanhos de tela. (arquivos na branch master)
 
 ### Tecnologias ultilizadas: 
 ![JS](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
