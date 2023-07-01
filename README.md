@@ -14,7 +14,7 @@ Na página deste repositório, clique na opção **<>code**, e em seguida **Down
 
 ### Clonando repositório:
 Na página deste repositório, clique na opção **<>code**, na aba "HTTPS" e clique no ícone para copiar o link. 
-Abra o git bash, altere o diretório de trabalho atual para o local em que deseja ter o diretório clonado. Digite **git clone** + url copiada (**`git@github.com:jonatas-souza21/ProjetoTCC_Pagina-EcoDesign.git`**).
+Abra o git bash, altere o diretório de trabalho atual para o local em que deseja ter o diretório clonado. Digite **git clone** + url copiada (**`git clone git@github.com:jonatas-souza21/ProjetoTCC_Pagina-EcoDesign.git`**).
 Pressione **ENTER** para criar o clone no local.
 
 ## Imagens 
