@@ -1,41 +1,41 @@
-// Carrossel de imagens
-{
-    const controls = document.querySelectorAll('.control');
-    let currentItem = 0;
-    const items = document.querySelectorAll('.item');
-    const maxItems = items.length;
+// // Carrossel de imagens
+// {
+//     const controls = document.querySelectorAll('.control');
+//     let currentItem = 0;
+//     const items = document.querySelectorAll('.item');
+//     const maxItems = items.length;
 
-    controls.forEach((control) => {
-        control.addEventListener('click', (e) => {
-            isLeft = e.target.classList.contains('arrow-left');
+//     controls.forEach((control) => {
+//         control.addEventListener('click', (e) => {
+//             isLeft = e.target.classList.contains('arrow-left');
 
-            if (isLeft) {
-                currentItem -= 1;
-            } else {
-                currentItem += 1;
-            }
+//             if (isLeft) {
+//                 currentItem -= 1;
+//             } else {
+//                 currentItem += 1;
+//             }
 
-            if (currentItem >= maxItems) {
-                currentItem = 0;
-            }
+//             if (currentItem >= maxItems) {
+//                 currentItem = 0;
+//             }
 
-            if (currentItem < 0) {
-                currentItem = maxItems - 1;
-            }
+//             if (currentItem < 0) {
+//                 currentItem = maxItems - 1;
+//             }
 
-            console.log('control', isLeft, currentItem);
-            items.forEach((item) => item.classList.remove('current-item'));
+//             console.log('control', isLeft, currentItem);
+//             items.forEach((item) => item.classList.remove('current-item'));
 
-            items[currentItem].scrollIntoView({
-                behavior: 'smooth',
-                inline: 'center',
-                block: 'nearest',
-            });
+//             items[currentItem].scrollIntoView({
+//                 behavior: 'smooth',
+//                 inline: 'center',
+//                 block: 'nearest',
+//             });
 
-            items[currentItem].classList.add('current-item');
-        });
-    });
-}
+//             items[currentItem].classList.add('current-item');
+//         });
+//     });
+// }
 
 //Botão para voltar ao início
 {
@@ -75,7 +75,6 @@
 
 
 // Eventos Menu hamburguer
-
     const menu = document.querySelector('#menu-icon');
     const navlist = document.querySelector('.navlist');
     const navbar = document.querySelector('.navbar');
@@ -87,10 +86,9 @@
       navlist.classList.toggle('open');
       navbar.classList.toggle('active');
       main.classList.toggle('blur')
-  }
-  )
+  })
 
-
+// Animações ao rolar página
 const scrollReveal = ScrollReveal({
     origin: 'top',
     distance: '10px',
@@ -103,3 +101,4 @@ scrollReveal.reveal (
     #testimony .testimony-title, #testimony .testimony-box,
     #contacts .map-container, #contacts .form-container`, {interval:100}
 )
+
