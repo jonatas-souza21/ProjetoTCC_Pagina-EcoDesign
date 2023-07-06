@@ -4,11 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre nós</title>
+    <!-- Cor de barra navegador (android) -->
+    <meta name="theme-color" content="#341d08">
+    <meta name="msapplication-TileColor" content="#341d08">
+    <meta name="msapplication-navbutton-color" content="#341d08">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#341d08">
+    <title>Eco Design - Design sustentável que ecoa beleza</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    />
+    <!--Font Awesome CDN -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <!-- API Scroll reveal - Animação no scroll -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ reset: false });
+    </script>
 </head>
 <body>
     <nav class="navbar">
         <a href="#home">
-            <img src="./img/logo3.jpeg" alt="Logo" class="logo" />
+            <img src="./img/logo.jpeg" alt="Logo" class="logo" />
         </a>
 
         <ul class="navlist">
@@ -27,7 +57,11 @@
         </ul>
 
         <div id="menu-icon" class="box box-menu">
-            
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+        </div>
+
+        <div class="box-x">
+            <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512"><path d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/></svg>
         </div>
     </nav>
     
@@ -42,12 +76,11 @@
 
     <footer>
         <div id="footer-content">
-            <div id="footer-contacts">
+            <div class="footer-logo">
                 <h2>Eco Design</h2>
                 <h3>Design sustentável que ecoa beleza</h3>
-                <p>Av. Bem-te-vi, 77 - Indianópolis</p>
-                <p>São Paulo - SP, 04524-030</p>
 
+                <p>Estamos também por aqui:</p>
                 <div class="footer-social-media">
                     <a
                         href="https://instagram.com/ecodesign_eco?igshid=MzNlNGNkZWQ4Mg=="
@@ -62,24 +95,27 @@
                 </div>
             </div>
 
-            <ul class="footer-list">
-                <li>
-                    <h2>Mais informações</h2>
-                </li>
-                <li>
-                    <a href="#contacts" class="footer-link"
-                        >Faça seu projeto conosco</a
-                    >
-                </li>
-                <li>
-                    <a href="#" class="footer-link"
-                        >Seja nosso fornecedor</a
-                    >
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Trabalhe conosco</a>
-                </li>
-            </ul>
+            <div id="footer-contacts">
+                <h3>Nossos contatos</h3>
+                <p>
+                    <span><i class="fa-solid fa-location-dot fa-lg"></i></span>
+                    Av. Bem-te-vi, 77 - Indianópolis, São Paulo - SP
+                </p>
+                <p>
+                    <span><i class="fa-solid fa-phone fa-lg"></i></span>
+                    +55 (11)2243-5067
+                </p>
+                <p>
+                    <span><i class="fa-solid fa-envelope fa-lg"></i></span>
+                    ecodesign@contato.com
+                </p>
+            </div>
+
+            <div class="footer-work-time">
+                <h3>Horário de funcionamento</h3>
+                <p>Seg a Sexta - 08:00 às 18:00</p>
+                <p>Sabádos - 08:00 às 18:00</p>
+            </div>
         </div>
 
         <div id="footer-copyright">

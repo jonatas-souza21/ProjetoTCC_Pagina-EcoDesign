@@ -84,8 +84,6 @@ section {
     transition: all 0.3s ease-in-out;
 }
 
-
-
 /*----Menu navegação---- */
 .navbar {
     position: fixed;
@@ -117,6 +115,7 @@ section {
 
 .navlist {
     display: flex;
+    gap: 3.16rem;
 }
 
 .navlist a {
@@ -124,7 +123,7 @@ section {
     text-transform: uppercase;
     font-size: var(--p-font-size);
     font-weight: 500;
-    margin: 0 1.58rem;
+    /* margin: 0 1.58rem; */
     transition: all 250ms ease;
     position: relative;
 }
@@ -262,8 +261,14 @@ section {
     flex-direction: column;
     justify-content: center;
     z-index: 1;
-    text-align: justify;
 }
+
+/* .about-text p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+} */
 
 .about-img {
     width: 32.68rem;
@@ -280,7 +285,7 @@ section {
 
 .content {
     width: 100%;
-    height: 25rem;
+    height: 21rem;
     overflow: hidden;
     position: relative;
     
@@ -290,7 +295,7 @@ section {
     margin-top: 20px;
     line-height: 1.8em;
     font-size: var(--p-font-size);
-    
+    text-align: justify;
 }
 
 .content h2 {
@@ -308,15 +313,18 @@ section {
     background: linear-gradient(0.5turn, transparent 80%, var(--bg-color));
 }
 
+/* A classe about-text ativa(.active) recebe esses valores: */
 .about-text.active .content {
     height: auto;
     margin-bottom: 1.25rem
 }
 
+/* Para ocultar o fade quando a classe estiver ativa */
 .about-text.active .content::after {
     visibility: hidden;
 }
 
+/* Botão "Ler Mais" */
 #button-read-more {
     padding: 1rem 4rem 1rem 4rem;
     border-radius: 5px;
@@ -630,33 +638,52 @@ section {
 footer {
     height: auto;
     width: 100%;
-    background-color: #080808;
+    background-color: #1d1d1d;
     position: relative;
 }
 
+/* Container do footer */
 #footer-content {
     width: 100%;
-    height: 90%;
+    height: 100%;
     display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
     padding: 3rem 15% 3.5rem;
 }
 
-#footer-contacts {
-    width: 50%;
-    height: 100%;
-}
-
-#footer-contacts h2 {
-    margin-bottom: 0.2rem;
+#footer-contacts h3 {
+    margin-bottom: 1.5rem;
     text-transform: uppercase;
 }
 
-#footer-contacts h3 {
+#footer-contacts p {
     margin-bottom: 1rem;
+    line-height: var(--p-line-height);
 }
 
-#footer-contacts p {
-    margin-bottom: 0.5rem;
+#footer-contacts p span{
+    margin-right: 5px;
+}
+
+#footer-contacts p .fa-location-dot{
+    margin-right: 8px;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.footer-logo p {
+    margin-top: 1.5rem;
+    font-weight: bold;
+}
+
+.footer-logo h2 {
+    text-transform: uppercase;
 }
 
 .footer-social-media {
@@ -665,16 +692,23 @@ footer {
     margin-top: 1.5rem;
 }
 
-.footer-link {
+.footer-social-media a {
     color: var(--text-color);
+    transition: all 0.3s ease;
 }
 
-.footer-list {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin-left: 25%;
-    gap: 1.8rem;
+.footer-social-media a:hover {
+    color: var(--logo-color);
+}
+
+.footer-work-time h3{
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.footer-work-time p {
+    line-height: var(--p-line-height);
+
 }
 
 #footer-copyright {
@@ -699,13 +733,14 @@ footer::before {
     top: -30px;
     left: 0;
     display: block;
-    background-color: #080808;
+    background-color: #1d1d1d;
     transform: skew(0deg, -1deg);
     transform-origin: left;
     width: 100%;
     height: 80px;
 }
 /*============FOOTER-FIM============*/
+
 
 /*------ Botão para voltar ao topo ------*/
 #button-top {
@@ -764,6 +799,10 @@ footer::before {
         max-width: 30rem;
         height: 14.5rem;
     }
+
+    #footer-content {
+        gap: 3.75rem;
+    }
 }
 
 @media screen and (max-width: 1480px) {
@@ -801,6 +840,10 @@ footer::before {
 
     .testimony-box {
         height: 15rem;
+    }
+
+    #footer-content {
+        gap: 3rem;
     }
 
     #button-top.btn-active {
@@ -845,6 +888,11 @@ footer::before {
     .testimony-box {
         max-width: 45%;
         height: 17.5rem;
+    }
+
+    #footer-content {
+        padding: 3rem 10% 3.5rem;
+        gap: 1rem;
     }
 }
 
@@ -944,6 +992,18 @@ footer::before {
         border: none;
     }
 
+    #footer-content {
+        flex-wrap: wrap;
+    }
+
+    .footer-logo, #footer-contacts {
+        width: 45%;
+    }
+
+    .footer-work-time {
+        margin: 2rem auto 0;
+    }
+
     main.blur {
         filter: blur(20px);
         cursor: not-allowed;
@@ -979,6 +1039,30 @@ footer::before {
 
     .btn-home {
         margin: 0 auto;
+    }
+
+    .footer-logo {
+        width: 100%;
+        order: 1;
+    } 
+    
+    #footer-contacts {
+        width: auto;
+        margin-top: 4rem;
+        order: 3;
+    }
+
+    #footer-contacts h3 {
+        text-align: start;
+    }
+
+    .footer-work-time {
+        order: 2;
+        margin: 4rem 0 0;
+    }
+
+    .footer-work-time p {
+        text-align: start;
     }
 }
 
@@ -1021,6 +1105,7 @@ footer::before {
         padding: 1rem;
         margin: 0.9rem 0;
     }
+    
 
     #footer-content {
         flex-wrap: wrap;
@@ -1060,3 +1145,6 @@ footer::before {
         padding: 3rem 2rem;
     }
 }
+
+
+/* =============================== Pag. Sobre ==================================== */
