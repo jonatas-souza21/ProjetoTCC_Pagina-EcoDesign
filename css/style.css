@@ -65,7 +65,7 @@ body {
 }
 
 /* Cor menu hamburguer */
-#menu-icon svg {
+.menu-icon svg {
     fill:#faf9f6
 }
 
@@ -149,7 +149,7 @@ section {
 }
 
 /*------Menu hamburguer-------*/
-#menu-icon {
+.menu-icon {
     font-size: 2.19rem;
     color: var(--text-color);
     z-index: 101;
@@ -158,7 +158,7 @@ section {
     display: none;
 }
 
-.box-x {
+.menu-icon .icon-close {
     display: none;
 }
 /*============FIM-NAVBAR============*/
@@ -304,27 +304,6 @@ section {
     font-size: var(--h2-font-size);
     line-height: 1em;
 }
-
-/* .content::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: linear-gradient(0.5turn, transparent 80%, var(--bg-color));
-} */
-
-/* A classe about-text ativa(.active) recebe esses valores: */
-/* .about-text.active .content {
-    height: auto;
-    margin-bottom: 1.25rem
-} */
-
-/* Para ocultar o fade quando a classe estiver ativa */
-/* .about-text.active .content::after {
-    visibility: hidden;
-} */
 
 
 /* Botão "saiba mais" */
@@ -937,15 +916,22 @@ footer::before {
         display: none;
     }
 
-    #menu-icon {
+    .menu-icon {
         display: block;
         margin-right: 1%;
+    }
+
+    .icon-ham.none {
+        display: none;
+    }
+
+    .icon-close.active {
+        display: block;
     }
 
     .navbar {
         padding: 1.38rem 4%;
     }
-    
 
     .navbar.sticky {
         padding: 0.75rem 4%;
@@ -1010,6 +996,18 @@ footer::before {
         filter: blur(20px);
         cursor: not-allowed;
     }
+
+    .vetor1 {
+        position: absolute;
+        width: 10rem;
+        top: 10px;
+    }
+
+    .vetor2 {
+        display: block;
+        width: 10rem;
+        bottom: 10px;
+    }
 }
 
 @media screen and (max-width:700px) {
@@ -1066,6 +1064,8 @@ footer::before {
     .footer-work-time p {
         text-align: start;
     }
+
+    
 }
 
 /* Dispositivos pequenos */
@@ -1082,7 +1082,7 @@ footer::before {
         width: 180px;
     }
 
-    #menu-icon {
+    .menu-icon {
         margin-right: 1.5%;
     }
 

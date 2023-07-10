@@ -75,16 +75,28 @@
 
 
 // Eventos Menu hamburguer
-    const menu = document.querySelector('#menu-icon');
+{
+    const menu = document.querySelector('.menu-icon');
+    const icon = document.querySelector('.icon-ham');
+    const iconClose = document.querySelector('.icon-close');
     const navlist = document.querySelector('.navlist');
     const navbar = document.querySelector('.navbar');
     const main = document.querySelector('main');
 
     menu.addEventListener('click', () => {
-      navlist.classList.toggle('open');
-      navbar.classList.toggle('active');
-      main.classList.toggle('blur')
-  })
+    navlist.classList.toggle('open');
+    navbar.classList.toggle('active');
+    main.classList.toggle('blur')
+
+    if (navlist.classList.contains('open')) {
+        icon.classList.toggle('none');
+        iconClose.classList.toggle('active')
+    } else {
+        icon.classList.remove('none');
+        iconClose.classList.remove('active')
+    }
+    })
+}
 
 // Animações ao rolar página
 const scrollReveal = ScrollReveal({

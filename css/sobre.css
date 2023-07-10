@@ -60,6 +60,15 @@
     font-weight: bold;
 }
 
+.vetor-arrow img {
+    width: 100px;
+    transition: 0.3s;
+}
+
+.vetor-arrow img:hover {
+    opacity: 0.7;
+}
+
 
 #about-company-text h2 {
     font-size: 3rem;
@@ -71,15 +80,6 @@
 
 #about-company-text h2 span {
     color: var(--logo-color);
-}
-
-.vetor-arrow svg {
-    fill:#faf9f6;
-    transition: all 0.3s ease;
-}
-
-.vetor-arrow svg:hover {
-    fill: var(--logo-color);
 }
 
 .about-history {
@@ -267,6 +267,14 @@
 }
 
 @media screen and (max-width: 900px) {
+    #about-company-text {
+        padding: 8rem 10% 7.5rem;
+    }
+
+    #about-company-text h2 {
+        margin-bottom: 70px;
+    }
+    
     .about-history {
         grid-template-columns: 1fr;
     }
@@ -310,6 +318,10 @@
 
     #about-company-text h2 {
         font-size: 2.2rem;
+    }
+
+    .vetor-arrow img {
+        width: 80px;
     }
 
 }
