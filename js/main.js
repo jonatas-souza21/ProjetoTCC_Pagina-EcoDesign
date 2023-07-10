@@ -39,7 +39,7 @@
 
 //Botão para voltar ao início
 {
-    const btn = document.querySelector('#button-top');
+    const btn = document.querySelector('.button-top');
 
     btn.addEventListener('click', () => {
         window.scrollTo(0, 0);
@@ -51,19 +51,19 @@
 }
 
 //Botão leia mais
-{
-    const button = document.querySelector('#button-read-more');
-    button.addEventListener('click', () => {
-        const aboutCard = document.querySelector('.about-text');
-        aboutCard.classList.toggle('active');
+// {
+//     const button = document.querySelector('#button-read-more');
+//     button.addEventListener('click', () => {
+//         const aboutCard = document.querySelector('.about-text');
+//         aboutCard.classList.toggle('active');
 
-        if (aboutCard.classList.contains('active')) {
-            return (button.innerHTML = 'Ler menos');
-        }
+//         if (aboutCard.classList.contains('active')) {
+//             return (button.innerHTML = 'Ler menos');
+//         }
 
-        return (button.innerHTML = 'Ler mais');
-    });
-}
+//         return (button.innerHTML = 'Ler mais');
+//     });
+// }
 
 // Menu nav - Efeito fade-in/fade-out
 {
@@ -79,10 +79,8 @@
     const navlist = document.querySelector('.navlist');
     const navbar = document.querySelector('.navbar');
     const main = document.querySelector('main');
-    const menuItem = document.querySelector('.navlist a')
 
     menu.addEventListener('click', () => {
-      menu.classList.toggle('box-x');
       navlist.classList.toggle('open');
       navbar.classList.toggle('active');
       main.classList.toggle('blur')

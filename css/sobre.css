@@ -1,0 +1,315 @@
+#about-company-img {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    background-image: url('../img/imagemfundo02.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20%;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#about-company-img::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #341d0889;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#about-company-img .company-desc {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.company-desc h1{
+    font-size: var(--h1-font-size);
+    text-align: center;
+}
+
+
+.company-desc .destaque {
+    color: var(--logo-color);
+}
+
+
+#about-company-text {
+    /* padding: 7rem 15% 7.5rem; */
+    scroll-margin-top: 70px;
+}
+
+.vetor-arrow {
+    position: absolute;
+    z-index: 2;
+    bottom: -6%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.vetor-arrow p{
+    text-align: center;
+    font-size: var(--p-font-size);
+    font-weight: bold;
+}
+
+
+#about-company-text h2 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 100px;
+    color: var(--text-color);
+}
+
+#about-company-text h2 span {
+    color: var(--logo-color);
+}
+
+.vetor-arrow svg {
+    fill:#faf9f6;
+    transition: all 0.3s ease;
+}
+
+.vetor-arrow svg:hover {
+    fill: var(--logo-color);
+}
+
+.about-history {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    gap: 50px;
+}
+
+.about-history-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-history-img .img-box {
+    width: 32.68rem;
+    height: 25.32rem;
+}
+
+.about-history-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.about-history-text p {
+    line-height: 1.8em;
+    font-size: var(--p-font-size);
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+
+#the-company {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-image: url(../img/imagemfundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20%;
+    background-attachment: fixed;
+    position: relative;
+    /* padding: 8rem 15% 12.5rem; */
+}
+
+#the-company .the-company-text {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.the-company-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.the-company-text h2 span {
+    color: var(--logo-color);
+}
+
+.the-company-text p {
+    font-size: var(--p-font-size);
+    line-height: 1.8rem;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+#the-company::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #1d1d1de0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#statements {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 50px;
+    padding: 0rem 15% 0rem;
+    position: relative;
+}
+
+#statements .statement {
+    background-color: #1d1d1d;
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+    padding: 2rem;
+    position: relative;
+    top: -120px;
+}
+
+#statements .statement h2 {
+    font-size: var(--h2-font-size);
+    font-weight: bold;
+    color: var(--logo-color);
+}
+
+#statements .statement p {
+    line-height: 1.8em;
+    margin-top: 20px;
+}
+
+
+
+
+
+/*========== MEDIA QUERIES - BREAKPOINTS ============*/
+@media screen and (max-width: 1730px) {
+    .about-history-img .img-box {
+        width: 32.68rem;
+        height: 25.32rem;
+    }
+}
+
+
+@media screen and (max-width: 1480px){
+    .section {
+        padding: 10rem 10% 7.5rem;
+    }
+    
+    #the-company .the-company-text {
+        width: 60%;
+    }
+
+    .about-history-img .img-box {
+        width: 90%;
+        height: 24.32rem;
+    }
+
+    #statements {
+        gap: 10px;
+        padding: 0rem 10% 0rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .section {
+        padding: 10rem 10% 7.5rem;
+    }
+
+    .company-desc h1{
+        font-size: 3.5rem;
+        font-weight: bold;
+    }
+
+    #the-company {
+        justify-content: center;
+        padding: 7rem 10% 9rem;
+    }
+
+    #the-company .the-company-text {
+        width: 90%;
+    }
+
+    .the-company-text h2 {
+        font-size: 2rem;
+    }
+
+    #statements {
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 0rem 10% 0rem;
+        gap: 15px;
+    }
+
+    #statements .statement {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .about-history {
+        grid-template-columns: 1fr;
+    }
+
+    .about-history-text {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .section {
+        padding: 10rem 8% 7.5rem;
+    }
+
+    #statements {
+        padding: 0rem 8% 0rem;
+    }
+
+    #the-company {
+        padding: 7rem 8% 9rem;
+    }
+}
+
+@media screen and (max-width:536px) {
+    .company-desc h1 {
+        font-size: 2.5rem;
+    }
+
+    #the-company .the-company-text {
+        width: 100%;
+    }
+
+    .about-history-img .img-box {
+        width: 100%;
+    }
+
+    .about-history-text {
+        width: 100%;
+    }
+
+    #about-company-text h2 {
+        font-size: 2.2rem;
+    }
+
+}

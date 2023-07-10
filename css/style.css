@@ -230,6 +230,7 @@ section {
 
 .btn-home:hover {
     background-color: #ffffff5c;
+    transform: scale(1.05);
 }
 
 #home::after {
@@ -273,6 +274,7 @@ section {
 .about-img {
     width: 32.68rem;
     height: 25.32rem;
+    margin: 0 auto;
     z-index: 1;
 }
 
@@ -285,10 +287,10 @@ section {
 
 .content {
     width: 100%;
-    height: 21rem;
+    height: auto;
     overflow: hidden;
     position: relative;
-    
+    margin-bottom: 1.5rem;
 }
 
 .content p {
@@ -303,7 +305,7 @@ section {
     line-height: 1em;
 }
 
-.content::after {
+/* .content::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -311,20 +313,21 @@ section {
     top: 0;
     left: 0;
     background: linear-gradient(0.5turn, transparent 80%, var(--bg-color));
-}
+} */
 
 /* A classe about-text ativa(.active) recebe esses valores: */
-.about-text.active .content {
+/* .about-text.active .content {
     height: auto;
     margin-bottom: 1.25rem
-}
+} */
 
 /* Para ocultar o fade quando a classe estiver ativa */
-.about-text.active .content::after {
+/* .about-text.active .content::after {
     visibility: hidden;
-}
+} */
 
-/* Botão "Ler Mais" */
+
+/* Botão "saiba mais" */
 #button-read-more {
     padding: 1rem 4rem 1rem 4rem;
     border-radius: 5px;
@@ -336,10 +339,11 @@ section {
     font-size: 1rem;
     display: block;
     margin: 0 auto;
+    color: var(--second-text-color);
 }
 
-.box-button-rm {
-    width: 100%;
+#button-read-more:hover {
+    opacity: 0.8    ;
 }
 
 .vetor1 {
@@ -356,6 +360,7 @@ section {
     /* transform: rotate(50deg); */
 }
 /*---------- Seção About-Fim ----------*/
+
 
 /*---------- Seção Projetos-Inicio ----------*/
 #projects {
@@ -743,12 +748,12 @@ footer::before {
 
 
 /*------ Botão para voltar ao topo ------*/
-#button-top {
+.button-top {
     visibility: hidden;
     background-color: transparent;
 }
 
-#button-top.btn-active {
+.button-top.btn-active {
     position: fixed;
     bottom: 2rem;
     right: 2rem;
@@ -766,7 +771,7 @@ footer::before {
     visibility: visible;
 }
 
-#arrow {
+.arrow {
     padding: 10px;
     box-shadow: 4px -4px 0 1px var(--logo-color) inset;
     border: solid transparent;
@@ -775,7 +780,7 @@ footer::before {
     transition: 0.4s;
 }
 
-#arrow:hover {
+.arrow:hover {
     opacity: 0.7;
 }
 
@@ -846,7 +851,7 @@ footer::before {
         gap: 3rem;
     }
 
-    #button-top.btn-active {
+    .button-top.btn-active {
         position: fixed;
         bottom: 2rem;
         right: 2rem;
@@ -907,10 +912,6 @@ footer::before {
         display: none;
         width: 80%;
     }
-
-    .content {
-        height: 15rem;
-    }
     
     .vetor1 {
         top: 0;
@@ -944,6 +945,7 @@ footer::before {
     .navbar {
         padding: 1.38rem 4%;
     }
+    
 
     .navbar.sticky {
         padding: 0.75rem 4%;
@@ -1124,7 +1126,7 @@ footer::before {
         align-items: center;
     }
 
-    #button-top.btn-active {
+    .button-top.btn-active {
         bottom: 1rem;
         right: 1rem;
     }
@@ -1145,6 +1147,3 @@ footer::before {
         padding: 3rem 2rem;
     }
 }
-
-
-/* =============================== Pag. Sobre ==================================== */
